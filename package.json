@@ -1,0 +1,9 @@
+{
+  "name": "ota-pdf-render",
+  "version": "1.0.0",
+  "description": "Draws a page of a PDF, or part of one, to a PNG with MuPDF, keeping pages read between pictures.",
+  "type": "module",
+  "main": "worker.mjs",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": { "mupdf": "1.26.4" }
+}
