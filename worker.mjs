@@ -4,8 +4,9 @@
 // a process of its own that the One-Touch bridge starts and talks to. It keeps the last pages it read in memory, so the
 // next picture of the same page (a zoom close-up) only draws: no reading the PDF again.
 //
-// This file is the whole program and is published under the AGPL with MuPDF; it holds nothing but "draw this part of
-// this PDF". The bridge (lib/doc-builder/render-mupdf/index.js) only sends it messages.
+// This file is the whole program and is published under the AGPL with MuPDF, at
+// https://github.com/One-Touch-Automation/ota-pdf-render (public; push it there whenever this file changes). It holds
+// nothing but "draw this part of this PDF". The bridge (lib/doc-builder/render-mupdf/index.js) only sends it messages.
 //
 // Messages: { id, op: 'render', key, file?, pageIndex, dpi, box?, out } → draws page `pageIndex` of the PDF kept under
 // `key` (read from `file` first when it is not kept) at `dpi`, the whole page or `box` ([x, y, w, h] in pixels at that
